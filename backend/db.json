@@ -1,0 +1,29 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Caneta BIC preta",
+      "price": 5.89
+    },
+    {
+      "id": 3,
+      "name": "Notebbok Mac Pro",
+      "price": 12
+    },
+    {
+      "id": 3,
+      "name": "Samsumg S20+",
+      "price": 3
+    },
+    {
+      "name": "",
+      "price": null,
+      "id": 4
+    },
+    {
+      "name": "",
+      "price": null,
+      "id": 5
+    }
+  ]
+}
