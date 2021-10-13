@@ -1,0 +1,24 @@
+<mat-card>
+    <mat-card-title> Faça já o seu agendamento ;-)</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Descrição do corte">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Data">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Horário (colocar horários fixos, ex: 13:00, 13:30...)">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="createProduct()" color="primary" >
+        Salvar
+    </button>
+    
+    <button mat-raised-button (click)="cancelProduct()" >
+        Cancelar
+    </button>
+</mat-card>
