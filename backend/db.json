@@ -1,29 +1,17 @@
 {
-  "products": [
+  "Eventos": [
     {
       "id": 1,
-      "name": "Caneta BIC preta",
-      "price": 5.89
+      "title": "Corte simples",
+      "start": "2020-10-13T09:00:00",
+      "end": "2020-10-13T10:00:00"
     },
     {
-      "id": 3,
-      "name": "Notebbok Mac Pro",
-      "price": 12
-    },
-    {
-      "id": 3,
-      "name": "Samsumg S20+",
-      "price": 3
-    },
-    {
-      "name": "",
-      "price": null,
-      "id": 4
-    },
-    {
-      "name": "",
-      "price": null,
-      "id": 5
+      "id": 2,
+      "title": "Remodelar barba",
+      "start": "2020-10-14T09:00:00",
+      "end": "2020-10-14T10:00:00"
     }
+   
   ]
 }
