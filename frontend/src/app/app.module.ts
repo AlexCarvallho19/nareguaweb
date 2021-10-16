@@ -26,7 +26,12 @@ import { HttpClientModule } from '@angular/common/http'
 import { FormsModule } from '@angular/forms'
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatInputModule } from '@angular/material/input';
+<<<<<<< HEAD
 import { CalendarComponent } from './components/product/calendar/calendar.component';
+=======
+import { LoginComponent } from './views/login/login.component';
+import { CreatAccountComponent } from './views/creat-account/creat-account.component';
+>>>>>>> f639e8005e32bad5eff826c493926b70aaff53bd
 
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
@@ -44,8 +49,13 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     ProductCrudComponent,
     RedDirective,
     ProductCreateComponent,
+<<<<<<< HEAD
     CalendarComponent,
     
+=======
+    LoginComponent,
+    CreatAccountComponent,
+>>>>>>> f639e8005e32bad5eff826c493926b70aaff53bd
   ],
   imports: [
     BrowserModule,

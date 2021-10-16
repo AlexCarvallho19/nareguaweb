@@ -1,0 +1,22 @@
+<mat-card class="bloco">
+    <i class="material-icons">account_circle</i>
+    <mat-card-title class="title">Cadastro</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="user.name" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Email" [(ngModel)]="user.email" name="email">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Senha" [(ngModel)]="user.senha" name="senha">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="createUser()" class="button-cadastrar">
+        Cadastrar
+    </button>
+    <button mat-raised-button class="button-cancelar" routerLink="/"> 
+        Cancelar
+    </button>
+    
+</mat-card>
