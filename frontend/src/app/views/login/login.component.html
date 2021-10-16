@@ -1,0 +1,19 @@
+<mat-card class="bloco">
+    <i class="material-icons">account_circle</i>
+    <mat-card-title class="title">Login</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Usuário" [(ngModel)]="login.usuario" >
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Senha" [(ngModel)]="login.password">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="onSubmit()" class="entrar">
+        Entrar
+    </button>
+    <button mat-raised-button class="cadastro" routerLink="creatAccount"> 
+        Cadastre-se
+    </button>
+    
+</mat-card>

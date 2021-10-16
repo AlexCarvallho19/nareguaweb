@@ -1,0 +1,44 @@
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    margin-left: 200px;
+    
+}
+
+button{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+.button-cadastrar{
+    margin-bottom: 10px;
+    margin-left: 278px;
+}
+
+.button-cancelar{
+    margin-bottom: 10px;
+    margin-left: 280px;
+}
+
+.title{
+    margin-left: 276px;
+}
+
+.material-icons{
+    margin-left: 295px;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.bloco{
+    background-color: efeded;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 25px;
+    
+}
+
