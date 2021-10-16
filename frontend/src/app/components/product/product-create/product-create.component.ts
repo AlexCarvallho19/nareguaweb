@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from './../product.service'
 import { Router} from '@angular/router'
-import { Product } from '../product.model';
+import { Schedule } from '../schedule.model';
 
 @Component({
   selector: 'app-product-create',
@@ -10,9 +10,10 @@ import { Product } from '../product.model';
 })
 export class ProductCreateComponent implements OnInit {
 
-  product: Product = {
-    name:'',
-    price: null,
+  schedule: Schedule = {
+    title:'',
+    start: '',
+    end: ''
   } 
 
   constructor(private productService:ProductService,
@@ -23,7 +24,7 @@ export class ProductCreateComponent implements OnInit {
   }
   
   createProduct():void {
-    this.productService.create(this.product).subscribe(()=>{
+    this.productService.create(this.schedule).subscribe(()=>{
       this.productService.showMessage('Agendamento criado')
       this.router.navigate(['/products'])
     })
