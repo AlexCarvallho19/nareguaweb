@@ -6,13 +6,15 @@
 .header a {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
-.header .logo {
-    max-height: 32px;
+.header .logonaregua {
+    max-height: 190px;
+    padding-left: 5px;
 }
 .header .title-group {
-    padding-left: 25px;
-    
+    padding-left: 1px;
+    padding-top: 14px;
 }
 .header i {
     padding-right: 10px;

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router'
-import { CalendarOptions } from '@fullcalendar/angular';
+
 
 @Component({
   selector: 'app-product-crud',
@@ -16,8 +16,10 @@ export class ProductCrudComponent implements OnInit {
     navigateToProductCreate(): void {
       this.router.navigate(['/products/create'])
     }
-    calendarOptions: CalendarOptions = {
-      initialView: 'dayGridMonth'
-    };
+    navigateToCalendar(): void {
+      this.router.navigate(['/products/calendar'])
+    }
+    
+  
 
 }

@@ -1,5 +1,7 @@
-.home .title {
-    font-size: 3rem;
-    font-weight: 300;
-    line-height: 1.2;
+.button {
+    background-color: black;
+    border: none;
+    padding: 20px;
+    color: #fff;
+    border-radius: 30px;
 }

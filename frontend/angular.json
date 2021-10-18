@@ -1,7 +1,8 @@
 {
+  "styles": [ "src/styles.scss", "node_modules/font-awesome/scss/font-awesome" ],
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "8f521a57-567b-4480-85c7-d146c049534d"
+    "analytics": "a9dc3a0c-bd52-4a32-ae22-5702a6a1fc74"
   },
   "version": 1,
   "newProjectRoot": "projects",

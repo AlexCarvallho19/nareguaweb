@@ -2,14 +2,14 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar'
 import { Observable } from 'rxjs';
-import { Product } from './product.model';
+import { Schedule } from './schedule.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
 
-  private baseURL="http://localhost:3001/products";
+  private baseURL="http://localhost:3001/Eventos";
 
   constructor(private snackbar: MatSnackBar, private http:HttpClient) {
    }
@@ -20,7 +20,7 @@ export class ProductService {
       verticalPosition:'top'
     })
    }
-   create(product:Product): Observable<Product>{ 
-    return this.http.post<Product>(this.baseURL, product)
+   create(schedule:Schedule): Observable<Schedule>{ 
+    return this.http.post<Schedule>(this.baseURL, schedule)
    }
 }

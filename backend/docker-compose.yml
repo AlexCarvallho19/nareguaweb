@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  backapp:
+    build: .
+    command: npm start
+    ports:
+      - "3001:3001"
+    volumes:
+      - .:users/backapp
