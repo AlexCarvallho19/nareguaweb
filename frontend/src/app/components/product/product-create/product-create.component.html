@@ -3,13 +3,16 @@
     <form>
         
         <mat-form-field>
-            <input matInput placeholder="Descrição do corte">
+            <input matInput placeholder="Descrição do corte"
+            [(ngModel)]="product.title" name="title">
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Data e hora inicial">
+            <input matInput placeholder="Data e hora inicial"
+            [(ngModel)]="product.start" name="start">
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Data e hora final">
+            <input matInput placeholder="Data e hora final"
+            [(ngModel)]="product.end" name="end">
         </mat-form-field>
     </form>
     <button mat-raised-button (click)="createProduct()" color="primary" >
