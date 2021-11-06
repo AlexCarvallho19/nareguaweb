@@ -1,19 +1,40 @@
-<mat-card class="bloco">
-    <i class="material-icons">account_circle</i>
-    <mat-card-title class="title">Login</mat-card-title>
-    <form>
-        <mat-form-field>
-            <input matInput placeholder="Usuário" [(ngModel)]="login.usuario" >
-        </mat-form-field>
-        <mat-form-field>
-            <input matInput placeholder="Senha" [(ngModel)]="login.password">
-        </mat-form-field>
-    </form>
-    <button mat-raised-button (click)="onSubmit()" class="entrar">
-        Entrar
-    </button>
-    <button mat-raised-button class="cadastro" routerLink="creatAccount"> 
-        Cadastre-se
-    </button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Acesso</title>
+
+    <link rel="stylesheet" href="login.component.css">
+</head>
+<body>
     
-</mat-card>
+    <form class="form" action="">
+        <div class="card">
+            <div class="card-top">
+                <img class="imglogin" src="assets/img/user.png" alt="">
+                <h2 class="title">Login de Usuário</h2>
+            </div>
+
+            <div class="card-group">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Digite seu email" required>
+            </div>
+
+            <div class="card-group">
+                <label>Senha</label>
+                <input type="password" name="senha" placeholder="Digite sua senha" required>
+            </div>
+
+            <div class="card-group">
+                <label><input type="checkbox"> Lembre-me</label>
+            </div>
+
+            <div class="card-group btn" routerLink="home">
+                <button type="submit">ACESSAR</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

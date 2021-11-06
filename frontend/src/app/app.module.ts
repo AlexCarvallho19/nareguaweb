@@ -32,6 +32,8 @@ import { CreatAccountComponent } from './views/creat-account/creat-account.compo
 
 
 
+
+
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
   interactionPlugin
@@ -50,6 +52,7 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     CalendarComponent,
     LoginComponent,
     CreatAccountComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -65,7 +68,10 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
-    FullCalendarModule
+    FullCalendarModule,
+    
+    
+    
 
   ],
   providers: [],
