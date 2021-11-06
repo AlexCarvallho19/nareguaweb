@@ -9,9 +9,9 @@ import { Schedule } from './schedule.model';
 })
 export class ProductService {
 
-  private baseURL="http://localhost:3001/Eventos";
+ private baseURL = "http://localhost:3002/Eventos"
 
-  constructor(private snackbar: MatSnackBar, private http:HttpClient) {
+  constructor(private snackbar: MatSnackBar, private http: HttpClient) {
    }
    showMessage(msg:string) { 
     this.snackbar.open(msg,'X',{
@@ -20,7 +20,8 @@ export class ProductService {
       verticalPosition:'top'
     })
    }
-   create(schedule:Schedule): Observable<Schedule>{ 
-    return this.http.post<Schedule>(this.baseURL, schedule)
+   create(schedule:Schedule): Observable<Schedule> {
+     return this.http.post<Schedule>(this.baseURL,schedule)
    }
+  
 }

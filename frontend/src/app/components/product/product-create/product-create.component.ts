@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ProductService } from './../product.service'
 import { Router} from '@angular/router'
 import { Schedule } from '../schedule.model';
+import { ProductsService } from '../products.service';
+import { Products } from '../products.model';
+
 
 @Component({
   selector: 'app-product-create',
@@ -10,13 +13,14 @@ import { Schedule } from '../schedule.model';
 })
 export class ProductCreateComponent implements OnInit {
 
-  schedule: Schedule = {
-    title:'',
-    start: '',
-    end: ''
-  } 
+  product: Products ={
+    title: '',
+    start:'',
+    end:''
+  }
 
-  constructor(private productService:ProductService,
+
+  constructor(private productsService:ProductsService,
               private router:Router) { }
 
   ngOnInit(): void {
@@ -24,14 +28,18 @@ export class ProductCreateComponent implements OnInit {
   }
   
   createProduct():void {
-    this.productService.create(this.schedule).subscribe(()=>{
-      this.productService.showMessage('Agendamento criado')
-      this.router.navigate(['/products'])
-    })
+        this.productsService.create(this.product).subscribe(()=> {
+          this.productsService.showMessageteste('Agendamento criado')
+          this.router.navigate(['/products'])
+        })
+        
+      
+    }
     
-  }
+  
   cancelProduct():void {
     this.router.navigate(['/products'])
   }
+
 
 }

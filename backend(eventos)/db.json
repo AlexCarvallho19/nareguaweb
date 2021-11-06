@@ -1,0 +1,38 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Caneta Bic",
+      "price": 5.89
+    },
+    {
+      "name": "produto teste",
+      "price": 129.89,
+      "id": 2
+    },
+    {
+      "title": "teste",
+      "start": "teste",
+      "end": "teste",
+      "id": 3
+    },
+    {
+      "title": "",
+      "start": "",
+      "end": "",
+      "id": 4
+    },
+    {
+      "title": "a",
+      "start": "a",
+      "end": "a",
+      "id": 5
+    },
+    {
+      "title": "Corte simples",
+      "start": "10/11/21 - 13:00",
+      "end": "10/11/21 - 14:00",
+      "id": 6
+    }
+  ]
+}
