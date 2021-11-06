@@ -13,7 +13,7 @@
       "end": "2020-10-14T10:00:00"
     }
   ],
-  "Users": [
+  "users": [
     {
       "id": 1,
       "name": "test",
@@ -25,6 +25,18 @@
       "email": "ras@",
       "senha": "sssss",
       "id": 2
+    },
+    {
+      "name": "ddd",
+      "email": "@fff",
+      "senha": "777",
+      "id": 3
+    }
+  ],
+  "admin": [
+    {
+      "id": 1,
+      "senha": "Admin1234"
     }
   ]
 }

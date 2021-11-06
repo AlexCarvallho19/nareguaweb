@@ -35,6 +35,21 @@ button{
     margin-bottom: 10px;
 }
 
+.button_areaRestrita{
+    display: flex;
+    margin-top: 20px;
+    background-color: rgb(196, 39, 28);
+    font-size: 15px;
+    margin-left: 920px;
+}
+
+.icon-lock{
+    font-size: 25px;
+    margin-left: 0;
+    margin-top: 5px;
+    
+}
+
 .bloco{
     background-color: efeded;
     margin-left: 200px;

@@ -10,7 +10,7 @@ import { Observable, EMPTY } from "rxjs"
 })
 export class AccountService {
 
-  baseUrl = "http://localhost:3001/Users";
+  baseUrl = "http://localhost:3001/users";
 
   constructor(private http: HttpClient) { }
 
@@ -27,5 +27,26 @@ export class AccountService {
     );
   }
   
+  read(): Observable<User[]> {
+    return this.http.get<User[]>(this.baseUrl).pipe(
+      map((obj) => obj)
+    );
+  }
+
+  readById(id: number): Observable<User> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.get<User>(url).pipe(
+      map((obj) => obj)
+    );
+  }
+
+  delete(id: number): Observable<User> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.delete<User>(url).pipe(
+      map((obj) => obj)
+    );
+  }  
+
+ 
 
 }

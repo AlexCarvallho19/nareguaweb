@@ -7,11 +7,11 @@ services:
     ports:
       - "3001:3001"
     volumes:
-      - ./backend:/users/backapp  
+      - ./backend:/user/backapp  
   angularapp:
     build: "./frontend"
     command: npm start
     ports: 
       - "4200:4200"
     volumes: 
-      - ./frontend:/users/app
+      - ./frontend:/user/app

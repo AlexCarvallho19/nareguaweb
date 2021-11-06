@@ -1,0 +1,34 @@
+.bloco{
+    background-color: efeded;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 80px;
+}
+
+.icon-key{
+    margin-left: 295px;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.title{
+    margin-left: 203px;
+}
+
+.button_entrar{
+    margin-top: 15px;
+    margin-left: 295px;
+}
+
+.button_cancelar{
+    margin-top: 15px;
+    margin-left: 288px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    margin-right: 200px;
+    margin-left: 220px;
+}
