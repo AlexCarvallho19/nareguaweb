@@ -51,6 +51,11 @@ body {
     outline: 0;
 }
 
+.button_areaRestrita{
+    margin-left: 530px;
+    margin-bottom: 20px;
+}
+
 .btn button:hover{
     background-image: linear-gradient(to right, rgb(65, 65, 212), #462525);
 }
