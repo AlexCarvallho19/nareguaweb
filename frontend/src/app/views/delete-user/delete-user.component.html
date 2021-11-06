@@ -1,0 +1,16 @@
+<mat-card>
+    <mat-card-title>Excluir Usuário</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome"
+                [value]="user.name" name="name" disabled>
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="deleteUser()" color="warn">
+        Excluir
+    </button>
+    
+    <button mat-raised-button>
+        Cancelar
+    </button>
+</mat-card>

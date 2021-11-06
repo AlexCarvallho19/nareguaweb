@@ -1,0 +1,21 @@
+<mat-card class="bloco">
+    <i class="material-icons icon-key">vpn_key</i>
+    <mat-card-title class="title">Digite a chave de acesso</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Chave de acesso" [(ngModel)]="loginAdmin.senha">
+        </mat-form-field>
+    </form>
+
+    <button  mat-raised-button class="button_entrar" (click)="onSubmit()">
+        Entrar
+    </button>
+
+    <button  mat-raised-button class="button_cancelar" routerLink="/">
+        Cancelar
+    </button>
+
+</mat-card>
+
+
+

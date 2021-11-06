@@ -1,0 +1,52 @@
+.bloco{
+    background-color: efeded;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 50px;
+
+}
+
+.icon-key{
+    margin-left: 98px;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.title{
+    margin-top: 10px;
+    margin-left: 55px;
+}
+
+.button_ConsularUsuários{
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.button_EditarPginaInicial{
+    margin-top: 20px;
+    margin-left: 56px;
+}
+
+.button_EditarAgendamento{
+    margin-top: 20px;
+    margin-left: 56px;
+}
+
+.button_EditarSenha{
+    margin-top: 20px;
+    margin-left: 48px;
+}
+
+.button{
+    background-color: rgb(88, 88, 88);
+    color: white;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    margin-right: 100px;
+    margin-left: 120px;
+}

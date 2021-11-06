@@ -1,6 +1,6 @@
 FROM node:alpine
 
-WORKDIR /users/app
+WORKDIR /user/app
 
 COPY . .
 
