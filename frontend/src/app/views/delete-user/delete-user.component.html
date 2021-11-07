@@ -3,14 +3,14 @@
     <form>
         <mat-form-field>
             <input matInput placeholder="Nome"
-                [value]="user.name" name="name" disabled>
+            [value]="user.name" name="name" disabled    >
         </mat-form-field>
     </form>
     <button mat-raised-button (click)="deleteUser()" color="warn">
         Excluir
     </button>
     
-    <button mat-raised-button>
+    <button mat-raised-button routerLink="/userQuery">
         Cancelar
     </button>
 </mat-card>

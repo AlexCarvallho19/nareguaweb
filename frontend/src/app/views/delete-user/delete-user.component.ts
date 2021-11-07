@@ -19,14 +19,16 @@ export class DeleteUserComponent implements OnInit {
     private accountService: AccountService) { }
 
   ngOnInit(): void {
-    const id = 1
+    const id = +this.route.snapshot.paramMap.get('id');
     this.accountService.readById(id).subscribe((user) => {
       this.user = user;
     });
   }
 
   deleteUser(): void {
-    
+    this.accountService.delete(this.user.id).subscribe(() => {
+      this.router.navigate(["/userQuery"]);
+    });
   }
 
 

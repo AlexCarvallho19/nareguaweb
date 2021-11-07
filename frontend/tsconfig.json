@@ -21,7 +21,9 @@
       "dom"
     ],
 
-    "strictPropertyInitialization": false // foi acresentado
+    "strictPropertyInitialization": false, // foi acresentado
+    "strictNullChecks":false // aterado :(anteriormente = true)
+
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

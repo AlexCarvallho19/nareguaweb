@@ -49,7 +49,7 @@ const routes: Routes = [{
   component: UpdatePasswordAdminComponent 
 },
 {
-  path: 'deleteUser',
+  path: "deleteUser/:id",
   component: DeleteUserComponent
 },
 {
