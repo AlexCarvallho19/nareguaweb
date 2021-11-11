@@ -1,7 +1,11 @@
 body {
-    background-color: #292929;
-    font-family: sans-serif;
-    padding-top: 70px;
+    background-image: url("/assets/img/fundosite.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 75px;
+    padding-left: 80px;
+    opacity: 0.95;
     
 }
 
