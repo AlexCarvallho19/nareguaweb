@@ -3,19 +3,22 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    padding: 75px;
+    padding: 4px;
     padding-left: 80px;
-    opacity: 0.95;
     
 }
 
 .form {
     width: 400px;
-    margin: auto;
-    padding-top: 40px;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-left: 290px;
 }
 
 .card {
+    background-image: url("/assets/img/paredeBranca.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     box-shadow: 1px 1px 5px #ccc;
     background-color: white;
     padding: 30px;
@@ -32,7 +35,7 @@ body {
 
 .card-group > label{
     width: 100%;
-    color: rgb(75, 75, 75);
+    color: rgb(7, 7, 7);
     display: block;
 
 }
@@ -46,7 +49,7 @@ body {
 }
 
 .card-group > button {
-    background-image: linear-gradient(to right, rgb(65, 65, 212), #572e2e);
+    background-image: linear-gradient(to right, rgb(11, 11, 34), #312d2d);
     width: 100%;
     border-radius: 30px;
     padding: 15px;
@@ -56,12 +59,13 @@ body {
 }
 
 .button_areaRestrita{
-    margin-left: 530px;
+    margin-left: 570px;
     margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 .btn button:hover{
-    background-image: linear-gradient(to right, rgb(65, 65, 212), #462525);
+    background-image: linear-gradient(to right, rgb(11, 11, 34), #0f0c0c);
 }
 
 .imglogin{

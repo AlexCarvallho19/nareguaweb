@@ -3,17 +3,17 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    padding: 95px;
+    padding: 72px;
     padding-left: 80px;
-    opacity: 0.90;
     font-family: sans-serif;
 }
 
 .but{
     
     width: 400px;
-    margin: auto;
-    padding-top: 40px;
+    margin-top: -20px;
+    padding-top: 20px;
+    padding-left: 280px;
 }
 
 .agend {
@@ -24,8 +24,6 @@ body {
     background-color:  white;
     padding: 80px;
     border-radius: 5px;
-    
-
 }
 
 .card-top {
@@ -38,7 +36,7 @@ body {
 }
 
 .card-grup > button{
-    background-image: linear-gradient(to right, rgb(11, 11, 34), #817474);
+    background-image: linear-gradient(to right, rgb(11, 11, 34), #312d2d);
     width: 100%;
     border-radius: 30px;
     padding: 15px;
@@ -47,10 +45,8 @@ body {
 }
 
 .bttn button:hover{
-    background-image: linear-gradient(to right, rgb(11, 11, 34), #423939);
-    
+    background-image: linear-gradient(to right, rgb(11, 11, 34), #0f0c0c);
 }
-
 
 .imgAgend{
     border-radius: 50px;

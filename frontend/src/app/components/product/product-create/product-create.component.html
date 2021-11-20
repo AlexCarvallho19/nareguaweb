@@ -1,25 +1,41 @@
-<mat-card>
-    <mat-card-title> Faça já o seu agendamento ;-)</mat-card-title>
-    <form>
-        
-        <mat-form-field>
-            <input matInput placeholder="Descrição do corte"
-            [(ngModel)]="product.title" name="title">
-        </mat-form-field>
-        <mat-form-field>
-            <input matInput placeholder="Data e hora inicial"
-            [(ngModel)]="product.start" name="start">
-        </mat-form-field>
-        <mat-form-field>
-            <input matInput placeholder="Data e hora final"
-            [(ngModel)]="product.end" name="end">
-        </mat-form-field>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Agendamento</title>
+
+    <link rel="stylesheet" href="product-create.component.css">
+
+</head>
+<body>
+    <form class="form" action="">
+        <div class="card">
+            <div class="card-top">
+                <img class="imgAgendando" src="/assets/img/agendarIcon.png" alt="">
+                <h2>Realizar Agendamento</h2>
+            </div>
+
+            <div class="card-group">
+                <label>Descrição do Corte</label>
+                <input type="text" name="descricaoCorte" placeholder="Descreva seu corte" required>
+            </div>
+            <div class="card-group">
+                <label>Data do corte</label>
+                <input type="date" name="dataCorte" placeholder="Informe a data do corte" required>
+            </div>
+            <div class="card-group">
+                <label>Horário do corte</label>
+                <input type="time" name="horaCorte" placeholder="Informe o horário do corte" required>
+            </div>
+            <div class="card-group bttn">
+                <button type="button">Salvar</button>
+            </div>
+            <div class="card-group bttn" routerLink="">
+                <button type="button">Cancelar</button>
+            </div>
+        </div>
     </form>
-    <button mat-raised-button (click)="createProduct()" color="primary" >
-        Salvar
-    </button>
-    
-    <button mat-raised-button (click)="cancelProduct()" >
-        Cancelar
-    </button>
-</mat-card>
+</body>
+</html>

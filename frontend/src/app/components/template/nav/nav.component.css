@@ -1,5 +1,8 @@
 .sidenav {
-    background-color: #3F51B5;
+    background-image: url("/assets/img/tijoloPreto.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     width: 200px;
 }
 
