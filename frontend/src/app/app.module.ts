@@ -29,6 +29,11 @@ import { MatInputModule } from '@angular/material/input';
 import { CalendarComponent } from './components/product/calendar/calendar.component';
 import { LoginComponent } from './views/login/login.component';
 import { CreatAccountComponent } from './views/creat-account/creat-account.component';
+import { ProductReadComponent } from './components/product/product-read/product-read.component';
+import { ProductRead2Component } from './components/product/product-read2/product-read2.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 
 
@@ -50,6 +55,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     CalendarComponent,
     LoginComponent,
     CreatAccountComponent,
+    ProductReadComponent,
+    ProductRead2Component,
   ],
   imports: [
     BrowserModule,
@@ -65,7 +72,11 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
-    FullCalendarModule
+    FullCalendarModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    
 
   ],
   providers: [],

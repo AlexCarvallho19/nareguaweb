@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { CalendarOptions } from '@fullcalendar/angular';
+import { ProductsService } from '../products.service';
+import { Products } from '../products.model';
+import { HttpClient } from '@angular/common/http';
 
 
 @Component({
@@ -9,22 +11,15 @@ import { CalendarOptions } from '@fullcalendar/angular';
 })
 export class CalendarComponent implements OnInit {
 
-  constructor() { }
+  eventos: Products[] = [];
+  displayedColumns = ['id','name','service','date']
+  constructor(private productsService:ProductsService,private http: HttpClient) { }
 
   ngOnInit(): void {
+    this.productsService.read().subscribe(eventos => {
+      this.eventos = eventos
+      console.log(eventos)
+    })
   }
-  calendarOptions: CalendarOptions = {
-    initialView: 'dayGridMonth',
-    dateClick: this.handleDateClick.bind(this), // bind is important!
-    events: [
-      { title: 'Neymar JR - Moicano', date: '2021-10-13' },
-      { title: 'Wiliam Bonner - Corte Simples', date: '2021-10-11' }
-    ]
-  };
-
-  handleDateClick(arg:any) {
-    alert('Realize um agendamento nesta data! ' + arg.dateStr )
-  }
-  
   
 }

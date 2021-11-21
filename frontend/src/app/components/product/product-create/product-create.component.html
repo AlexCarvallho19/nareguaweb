@@ -1,18 +1,18 @@
 <mat-card>
     <mat-card-title> Faça já o seu agendamento ;-)</mat-card-title>
-    <form>
+    <form >
         
         <mat-form-field>
-            <input matInput placeholder="Descrição do corte"
-            [(ngModel)]="product.title" name="title">
+            <input matInput placeholder="Informe o seu nome"
+            [(ngModel)]="product.name" name="name">
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Data e hora inicial"
-            [(ngModel)]="product.start" name="start">
+            <input matInput placeholder="Informe o serviço"
+            [(ngModel)]="product.service" name="service">
         </mat-form-field>
         <mat-form-field>
             <input matInput placeholder="Data e hora final"
-            [(ngModel)]="product.end" name="end">
+            [(ngModel)]="product.date" name="date">
         </mat-form-field>
     </form>
     <button mat-raised-button (click)="createProduct()" color="primary" >

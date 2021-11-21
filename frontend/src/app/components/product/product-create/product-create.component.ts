@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductService } from './../product.service'
 import { Router} from '@angular/router'
-import { Schedule } from '../schedule.model';
 import { ProductsService } from '../products.service';
 import { Products } from '../products.model';
+
 
 
 @Component({
@@ -13,21 +12,27 @@ import { Products } from '../products.model';
 })
 export class ProductCreateComponent implements OnInit {
 
+
+  
   product: Products ={
-    title: '',
-    start:'',
-    end:''
+    name: '',
+    service:'',
+    date:''
   }
 
 
   constructor(private productsService:ProductsService,
-              private router:Router) { }
+              private router:Router,
+             ) {
+               }
 
   ngOnInit(): void {
     
   }
-  
+
+
   createProduct():void {
+
         this.productsService.create(this.product).subscribe(()=> {
           this.productsService.showMessageteste('Agendamento criado')
           this.router.navigate(['/products'])
