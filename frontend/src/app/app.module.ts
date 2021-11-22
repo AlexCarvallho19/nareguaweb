@@ -1,11 +1,12 @@
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { LoginAdimComponent } from './views/login-adim/login-adim.component';
+import { CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
 import { DeleteUserComponent } from './views/delete-user/delete-user.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { FullCalendarModule } from '@fullcalendar/angular'; // must go before plugins
-import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin!
-import interactionPlugin from '@fullcalendar/interaction'; // a plugin!
+import  dayGridPlugin  from '@fullcalendar/daygrid'; // a plugin!
+import  interactionPlugin  from '@fullcalendar/interaction'; // a plugin!
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -37,7 +38,9 @@ import { MatSortModule } from '@angular/material/sort';
 import { ProductReadComponent } from './components/product/product-read/product-read.component';
 import { ProductRead2Component } from './components/product/product-read2/product-read2.component';
 
-
+import { UpdatePasswordAdminComponent } from './views/update-password-admin/update-password-admin.component';
+import { MenuBarberComponent } from './views/menu-barber/menu-barber.component';
+import { UserQueryComponent } from './views/user-query/user-query.component';
 
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
@@ -47,6 +50,7 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
 
 @NgModule({
   declarations: [
+    
     AppComponent,
     HeaderComponent,
     FooterComponent,
@@ -60,7 +64,13 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     CreatAccountComponent,
     ProductReadComponent,
     ProductRead2Component,
-    DeleteUserComponent
+    DeleteUserComponent,
+
+    UpdatePasswordAdminComponent,
+    MenuBarberComponent,
+    UserQueryComponent,
+    LoginAdimComponent
+
   ],
   imports: [
     BrowserModule,

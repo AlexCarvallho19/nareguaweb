@@ -1,7 +1,6 @@
 {
   "Eventos": [
     {
-      
       "name": "Neymar Jr",
       "service": "moicano",
       "date": "22/11/2020-14:00",
@@ -15,12 +14,6 @@
     }
   ],
   "users": [
-    {
-      "id": 1,
-      "name": "user1",
-      "email": "user1@",
-      "senha": "user1"
-    },
     {
       "id": 2,
       "name": "user2",
