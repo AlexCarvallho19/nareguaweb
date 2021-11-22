@@ -1,38 +1,58 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Caneta Bic",
-      "price": 5.89
+      "name": "Corte simples",
+      "service": "2021-11-17T00:00:00-05:00",
+      "date": "2021-11-17T00:00:00-06:00",
+      "id": 1
     },
     {
-      "name": "produto teste",
-      "price": 129.89,
+      "name": "Remodelar barbar",
+      "service": "2021-11-18T09:00:00",
+      "date": "2021-11-18T10:00:00",
       "id": 2
     },
     {
-      "title": "teste",
-      "start": "teste",
-      "end": "teste",
+      "name": "exemplo",
+      "service": "adas",
+      "date": "asdasd",
       "id": 3
     },
     {
-      "title": "",
-      "start": "",
-      "end": "",
+      "name": "Fulano de tal",
+      "service": "remodelar barba",
+      "date": "20/11/2021 - 08:00",
       "id": 4
     },
     {
-      "title": "a",
-      "start": "a",
-      "end": "a",
+      "name": "",
+      "service": "",
+      "date": "",
       "id": 5
     },
     {
-      "title": "Corte simples",
-      "start": "10/11/21 - 13:00",
-      "end": "10/11/21 - 14:00",
+      "name": "teste",
+      "service": "teste",
+      "date": "20/11/2021 - 08:00",
       "id": 6
+    },
+    {
+      "name": "teste",
+      "service": "teste",
+      "date": "20/11/2021 - 08:00",
+      "id": 7
+    },
+    {
+      "name": "teste",
+      "service": "teste",
+      "date": "\t20/11/2021 - 08:00",
+      "id": 8
+    },
+    {
+      "name": "teste",
+      "service": "teste",
+      "date": "20/11/2021 - 08:00",
+      "id": 9
     }
   ]
 }

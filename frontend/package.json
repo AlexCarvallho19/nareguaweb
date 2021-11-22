@@ -13,7 +13,7 @@
     "@angular/cdk": "^12.2.1",
     "@angular/common": "~12.2.0",
     "@angular/compiler": "~12.2.0",
-    "@angular/core": "~12.2.0",
+    "@angular/core": "^12.2.13",
     "@angular/forms": "~12.2.0",
     "@angular/material": "^12.2.1",
     "@angular/platform-browser": "~12.2.0",
@@ -22,6 +22,7 @@
     "@fullcalendar/angular": "^5.9.0",
     "@fullcalendar/daygrid": "^5.9.0",
     "@fullcalendar/interaction": "^5.9.0",
+    "angular-calendar": "^0.28.28",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

@@ -7,12 +7,16 @@
 }
 
 .sidenav a {
-    color: #FFF;
+    padding-top: -5px;
+    padding-left: 0px;
+    color: rgb(247, 241, 241);
 }
 .sidenav i{
     padding-right: 10px;
 }
 .content{
-    padding: 16px;
+    padding: 7px;
+    padding-right: 6px;
+    padding-top: 5px;
     background-color: #FFF;
 }

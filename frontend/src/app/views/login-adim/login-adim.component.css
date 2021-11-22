@@ -1,8 +1,13 @@
+body {
+    background-image: url("/assets/img/fundosite.png");
+    
+}
+
 .bloco{
-    background-color: efeded;
+    background-color: rgb(138, 125, 125);
     margin-left: 200px;
     margin-right: 200px;
-    margin-top: 80px;
+    margin-top: 90px;
 }
 
 .icon-key{

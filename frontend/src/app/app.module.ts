@@ -1,3 +1,5 @@
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { DeleteUserComponent } from './views/delete-user/delete-user.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -29,17 +31,11 @@ import { MatInputModule } from '@angular/material/input';
 import { CalendarComponent } from './components/product/calendar/calendar.component';
 import { LoginComponent } from './views/login/login.component';
 import { CreatAccountComponent } from './views/creat-account/creat-account.component';
-import { LoginAdimComponent } from './views/login-adim/login-adim.component';
-import { MenuBarberComponent } from './views/menu-barber/menu-barber.component';
-import { UserQueryComponent } from './views/user-query/user-query.component';
-
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
-import { UpdatePasswordAdminComponent } from './views/update-password-admin/update-password-admin.component';
-import { DeleteUserComponent } from './views/delete-user/delete-user.component';
-
-
+import { ProductReadComponent } from './components/product/product-read/product-read.component';
+import { ProductRead2Component } from './components/product/product-read2/product-read2.component';
 
 
 
@@ -62,12 +58,9 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     CalendarComponent,
     LoginComponent,
     CreatAccountComponent,
-    LoginAdimComponent,
-    MenuBarberComponent,
-    UserQueryComponent,
-    UpdatePasswordAdminComponent,
+    ProductReadComponent,
+    ProductRead2Component,
     DeleteUserComponent
-  
   ],
   imports: [
     BrowserModule,
@@ -87,9 +80,11 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
+    
 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

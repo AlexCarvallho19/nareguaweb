@@ -15,12 +15,15 @@
 }
 .header .logonaregua {
     max-height: 190px;
-    padding-left: 5px;
+    padding-left: 1px;
 }
 .header .title-group {
+    color: rgb(247, 241, 241);
     padding-left: 1px;
     padding-top: 14px;
 }
 .header i {
     padding-right: 10px;
 }
+
+
