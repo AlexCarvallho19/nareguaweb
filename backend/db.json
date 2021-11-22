@@ -1,16 +1,17 @@
 {
   "Eventos": [
     {
-      "id": 1,
-      "title": "Corte simples",
-      "start": "2020-10-13T09:00:00",
-      "end": "2020-10-13T10:00:00"
+      
+      "name": "Neymar Jr",
+      "service": "moicano",
+      "date": "22/11/2020-14:00",
+      "id": 1
     },
     {
-      "id": 2,
-      "title": "Remodelar barba",
-      "start": "2020-10-14T09:00:00",
-      "end": "2020-10-14T10:00:00"
+      "name": "William Bonner",
+      "service": "Corte simples",
+      "date": "22/11/2020-15:00",
+      "id": 2
     }
   ],
   "users": [

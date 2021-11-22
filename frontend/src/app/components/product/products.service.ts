@@ -12,7 +12,7 @@ export class ProductsService {
  
   eventos: Products[] = [];
  
-  private baseURL = "http://localhost:3003/products"
+  private baseURL = "http://localhost:3001/Eventos"
   constructor(private snackbar: MatSnackBar, private http: HttpClient, private router:Router) { }
 
   showMessageteste(msg:string): void {
