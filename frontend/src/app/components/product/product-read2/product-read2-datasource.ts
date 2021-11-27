@@ -7,8 +7,8 @@ import { Products } from '../products.model';
 
 
 const EXAMPLE_DATA: Products[] = [
-  {id: 1, name: 'Hydrogen', service:"exemplo", date:"exemplo"},
-  {id: 2, name: 'Helium', service:"exemplo", date:"exemplo"}
+  {id: 1, name: 'Hydrogen', time:"exemplo", date:"exemplo"},
+  {id: 2, name: 'Helium', time:"exemplo", date:"exemplo"}
 ]
 /**
  * Data source for the ProductRead2 view. This class should

@@ -12,7 +12,7 @@ import { HttpClient } from '@angular/common/http';
 export class CalendarComponent implements OnInit {
 
   eventos: Products[] = [];
-  displayedColumns = ['id','name','service','date']
+  displayedColumns = ['id','name','time','date']
   constructor(private productsService:ProductsService,private http: HttpClient) { }
 
   ngOnInit(): void {

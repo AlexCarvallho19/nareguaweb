@@ -8,14 +8,14 @@
   
       <!-- Name Column -->
       <ng-container matColumnDef="name">
-        <th mat-header-cell *matHeaderCellDef>Nome</th>
+        <th mat-header-cell *matHeaderCellDef>Descrição do corte</th>
         <td mat-cell *matCellDef="let row">{{row.name}}</td>
       </ng-container>
 
        <!-- Service Column -->
-       <ng-container matColumnDef="service">
-        <th mat-header-cell *matHeaderCellDef >Serviço</th>
-        <td mat-cell *matCellDef="let row">{{row.service}}</td>
+       <ng-container matColumnDef="time">
+        <th mat-header-cell *matHeaderCellDef >Horário</th>
+        <td mat-cell *matCellDef="let row">{{row.time}}</td>
       </ng-container>
   
       <!-- Date Column -->

@@ -1,16 +1,22 @@
 {
   "Eventos": [
     {
-      "name": "Neymar Jr",
-      "service": "moicano",
-      "date": "22/11/2020-14:00",
+      "name": "exemplo",
+      "date": "2021-11-27",
+      "time": "exemplo",
       "id": 1
     },
     {
-      "name": "William Bonner",
-      "service": "Corte simples",
-      "date": "22/11/2020-15:00",
+      "name": "corte simples",
+      "date": "2021-11-24",
+      "time": "",
       "id": 2
+    },
+    {
+      "name": "Corte simples",
+      "date": "2021-11-27",
+      "time": "14:00 ",
+      "id": 3
     }
   ],
   "users": [

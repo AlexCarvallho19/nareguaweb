@@ -19,18 +19,18 @@
 
             <div class="card-group">
                 <label>Descrição do Corte</label>
-                <input type="text" name="descricaoCorte" placeholder="Descreva seu corte" required>
+                <input type="text" name="descricaoCorte" placeholder="Descreva seu corte" [(ngModel)]="product.name" name="name" required> 
             </div>
             <div class="card-group">
                 <label>Data do corte</label>
-                <input type="date" name="dataCorte" placeholder="Informe a data do corte" required>
+                <input type="date" name="dataCorte" placeholder="Informe a data do corte" [(ngModel)]="product.date" name="date" required> 
             </div>
             <div class="card-group">
                 <label>Horário do corte</label>
-                <input type="time" name="horaCorte" placeholder="Informe o horário do corte" required>
+                <input type="text" name="horaCorte" placeholder="Informe o horário do corte" [(ngModel)]="product.time" name="time" required>
             </div>
             <div class="card-group bttn">
-                <button type="button">Salvar</button>
+                <button type="button"(click)="createProduct()">Salvar</button>
             </div>
             <div class="card-group bttn" routerLink="">
                 <button type="button">Cancelar</button>
