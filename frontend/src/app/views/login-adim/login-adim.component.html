@@ -1,22 +1,35 @@
-<mat-card class="bloco">
-    <i class="material-icons icon-key">vpn_key</i>
-    <link rel="stylesheet" href="login-adim.component.css">
-    <mat-card-title class="title">Digite a chave de acesso</mat-card-title>
-    <form>
-        <mat-form-field>
-            <input matInput type="password"  placeholder="Chave de acesso" [(ngModel)]="loginAdmin.senha">
-        </mat-form-field>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de acesso admin</title>
+
+
+</head>
+<body>
+
+    <form class="form1" action="#">
+        <div class="card">
+            <div class="card-top">
+                <img class="imgAcessoAdmin" src="/assets/img/acessoAdmin.png" alt="">
+                <h2 class="title">Acesso de Administrador</h2>
+            </div>
+
+            <div class="card-group1">
+                <label>Chave de Acesso</label>
+                <input type="password" name="Chave de Acesso" placeholder="Digite sua chave de acesso" required>
+            </div>
+
+            <div class="card-group1 bttn" routerLink="/baberMenu">
+                <button type="button">Entrar</button>
+            </div>
+            <div class="card-group1 bttn" routerLink="">
+                <button type="button">Cancelar</button>
+            </div>
+        </div>
     </form>
-
-    <button  mat-raised-button class="button_entrar" (click)="onSubmit()">
-        Entrar
-    </button>
-
-    <button  mat-raised-button class="button_cancelar" routerLink="/">
-        Cancelar
-    </button> 
-
-</mat-card>
-
-
-
+    
+</body>
+</html>
