@@ -1,52 +1,58 @@
-.bloco{
-    background-color: efeded;
-    margin-left: 400px;
-    margin-right: 400px;
-    margin-top: 50px;
-
+body{
+    background-image: url("/assets/img/fundosite.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: sans-serif;
+    padding: 55px;
+    padding-left: 80px;
 }
 
-.icon-key{
-    margin-left: 98px;
-    font-size: 60px;
-    margin-bottom: 10px;
+.form{
+    width: 350px;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-left: 300px;
 }
 
-.title{
-    margin-top: 10px;
-    margin-left: 55px;
+.card2{
+    background-image: url("/assets/img/paredeBranca.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px 1px 5px #ccc;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
 }
 
-.button_ConsularUsuários{
-    margin-top: 20px;
-    margin-left: 60px;
+.card-topp{
+    text-align: center;
 }
 
-.button_EditarPginaInicial{
-    margin-top: 20px;
-    margin-left: 56px;
+.card-group{
+    margin-bottom: 15px;
 }
 
-.button_EditarAgendamento{
-    margin-top: 20px;
-    margin-left: 56px;
-}
-
-.button_EditarSenha{
-    margin-top: 20px;
-    margin-left: 48px;
-}
-
-.button{
-    background-color: rgb(88, 88, 88);
+.card-group > button{
+    background-image: linear-gradient(to right, rgb(11, 11, 34), #312d2d);
+    width: 100%;
+    border-radius: 30px;
+    padding: 15px;
     color: white;
+    border: 0px;
+    outline: 0;
 }
 
+.bttn button:hover{
+    background-image: linear-gradient(to right, rgb(11, 11, 34), #0f0c0c);
+}
 
-form{
-    display: flex;
-    flex-direction: column;
-    margin-top: 12px;
-    margin-right: 100px;
-    margin-left: 120px;
+.imgMenuBarber{
+    border-radius: 25px;
+    width: 50px;
+    box-shadow: 1px 1px 5px #ccc;
+}
+
+.titullo{
+    color: red;
 }

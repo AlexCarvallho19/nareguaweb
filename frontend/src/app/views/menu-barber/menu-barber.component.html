@@ -1,24 +1,39 @@
-<mat-card class="bloco mat-elevation-z4">
-    <i class="material-icons icon-key">description</i>
-    <mat-card-title class="title">Menu Barbeiro</mat-card-title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Barbeiro</title>
 
-    
-        <button  mat-raised-button class="button button_ConsularUsuários" routerLink="/userQuery">
-            Consultar usuários
-        </button>
-    
-        <button  mat-raised-button class="button button_EditarPginaInicial" routerLink="">
-            Editar página inicial
-        </button>
-    
-        <button  mat-raised-button class="button button_EditarAgendamento" routerLink="">
-            Editar agendamento
-        </button>
-    
-        <button  mat-raised-button class="button button_EditarSenha" routerLink="/updatePassword">
-            Editar chave de acesso
-        </button>
-    
-    
+    <link rel="stylesheet" href="menu-barber.component.css">
 
-</mat-card>
+</head>
+<body>
+    <form class="form" action="">
+        <div class="card2">
+            <div class="card-topp">
+                <img class="imgMenuBarber" src="/assets/img/menuBarbeiro.png" alt="">
+                <h2 class="titullo">Menu Barbeiro</h2>
+            </div>
+            
+            <div class="card-group bttn" routerLink="/userQuery">
+                <label></label>
+                <button type="button">Consultar Usuário</button>
+            </div>
+            <div class="card-group bttn" routerLink="">
+                <label></label>
+                <button type="button">Editar página inicial</button>
+            </div>
+            <div class="card-group bttn" routerLink="">
+                <label></label>
+                <button type="button">Editar Agendamento</button>
+            </div>
+            <div class="card-group bttn" routerLink="/updatePassword">
+                <label></label>
+                <button type="button">Editar chave de acesso</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
