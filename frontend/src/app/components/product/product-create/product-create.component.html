@@ -10,7 +10,7 @@
 
 </head>
 <body>
-    <form class="form" action="">
+    <form class="form" action="/calendar">
         <div class="card">
             <div class="card-top">
                 <img class="imgAgendando" src="/assets/img/agendarIcon.png" alt="">
@@ -29,10 +29,10 @@
                 <label>Horário do corte</label>
                 <input type="text" name="horaCorte" placeholder="Informe o horário do corte" [(ngModel)]="product.time" name="time" required>
             </div>
-            <div class="card-group bttn">
-                <button type="button"(click)="createProduct()">Salvar</button>
+            <div class="card-group bttn" routerLink="/products/calendar">
+                <button type="submit"(click)="createProduct()">Salvar</button>
             </div>
-            <div class="card-group bttn" routerLink="">
+            <div class="card-group bttn" routerLink="/products">
                 <button type="button">Cancelar</button>
             </div>
         </div>

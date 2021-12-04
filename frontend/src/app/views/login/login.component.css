@@ -3,7 +3,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    padding: 14px;
+    padding: 3px;
     padding-left: 80px;
     
 }
@@ -61,7 +61,7 @@ body {
 .button_areaRestrita{
     margin-left: 570px;
     margin-bottom: 20px;
-    margin-top: 30px;
+    margin-top: -5px;
 }
 
 .btn button:hover{

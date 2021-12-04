@@ -1,44 +1,73 @@
-
-form{
-    display: flex;
-    flex-direction: column;
-    margin-right: 200px;
-    margin-left: 200px;
+body {
+    background-image: url("/assets/img/fundosite.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 24px;
+    padding-left: 80px;
     
 }
 
-button{
-    display: flex;
-    flex-direction: column;
-    background-color: black;
+.form {
+    width: 380px;
+    margin-top: 1px;
+    padding-top: 30px;
+    padding-left: 290px;
+}
+
+.card {
+    background-image: url("/assets/img/paredeBranca.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px 1px 5px #ccc;
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.card-top {
+    text-align: center;
+}
+
+.card-group {
+    margin-bottom: 10px;
+}
+
+.card-group > label{
+    width: 100%;
+    color: rgb(7, 7, 7);
+    display: block;
+
+}
+
+.card-group > input {
+    border-radius: 5px;
+    outline: 0;
+    width: 100%;
+    height: 25px;
+    padding: 5px;
+}
+
+.card-group > button {
+    background-image: linear-gradient(to right, rgb(11, 11, 34), #312d2d);
+    width: 100%;
+    border-radius: 30px;
+    padding: 15px;
     color: white;
+    border: 0px;
+    outline: 0;
 }
 
-.button-cadastrar{
-    margin-bottom: 10px;
-    margin-left: 278px;
+.btn button:hover{
+    background-image: linear-gradient(to right, rgb(11, 11, 34), #0f0c0c);
 }
 
-.button-cancelar{
-    margin-bottom: 10px;
-    margin-left: 280px;
+.imglogin{
+    border-radius: 40px;
+    width: 65px;
+    box-shadow: 0px 0px 10px #ccc;
 }
 
-.title{
-    margin-left: 276px;
+.title {
+    color: #e41818;
 }
-
-.material-icons{
-    margin-left: 295px;
-    font-size: 60px;
-    margin-bottom: 10px;
-}
-
-.bloco{
-    background-color: efeded;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 25px;
-    
-}
-
