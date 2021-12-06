@@ -23,12 +23,28 @@ export class ProductsService {
     })
   }
   create(product:Products): Observable<Products> {
+    this.http.get<Products[]>(this.baseURL).subscribe(response =>{
+      response.forEach(evento => {
+        console.log(product.time)
+        if(evento.time == product.time){
+          console.log("Conflito de horário!")
+          window.alert("Conflito de horário.")
+          this.router.navigate(['/products'])
+          return null;
+        }
+      });
+      window.alert("Agendado com sucesso!")
+      return this.http.post<Products>(this.baseURL, product)
+    })
+    return null;
+
     
+    /*
     if(this.getSchedule(product) === this.http.get<Products[]>(this.baseURL)){
       this.showMessageteste('Horário indisponível.')
       this.router.navigate(['/products'])
-    }
-    return this.http.post<Products>(this.baseURL, product)
+    }*/
+    
   }
   read():Observable<Products[]>{
     return this.http.get<Products[]>(this.baseURL)

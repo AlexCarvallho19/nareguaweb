@@ -41,6 +41,7 @@ body{
     color: white;
     border: 0px;
     outline: 0;
+    cursor: pointer;
 }
 
 .bttn button:hover{

@@ -1,7 +1,6 @@
 .sidenav {
     background-image: url("/assets/img/tijoloPreto.jpg");
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     width: 200px;
 }
@@ -15,7 +14,7 @@
     padding-right: 10px;
 }
 .content{
-    padding: 7px;
+    padding: 5px;
     padding-right: 6px;
     padding-top: 5px;
     background-color: #FFF;

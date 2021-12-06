@@ -35,6 +35,9 @@ export class LoginComponent implements OnInit {
     }
     
   }
+  disabled(){
+    return (this.login.usuario == '' && this.login.password == '') ? true : false;
+  }
   
   
 }

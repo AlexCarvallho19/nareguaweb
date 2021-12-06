@@ -1,10 +1,89 @@
 body {
-    background-image: url("/assets/img/fundosite.png");
+    background-image: url("/assets/img/backgroundGIF.gif");
     background-attachment: fixed;
     background-size: cover;
-    padding: 288px;
+    padding: 68px;
     padding-left: 80px;
-    opacity: 0.90;
+    opacity: 1;
+    
 }
 
+.texto-sobre{
+    margin-top: 180px;
+    
+}
+
+.texto-sobre h1{
+    font-size: 35px;
+    padding-top: 60px;
+    font-family: 'Audiowide', cursive;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Carter One', cursive;
+    font-family: 'Orelega One', cursive;
+    font-family: 'Vast Shadow', cursive;
+}
+.texto-sobre p{
+    margin: 20px 0;
+    color: rgb(226, 223, 223);
+    font-size: 18px;
+    max-width: 800px;
+    font-family: 'Audiowide', cursive;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Carter One', cursive;
+    font-family: 'Fondamento', cursive;
+    font-family: 'Orelega One', cursive;
+    font-family: 'Vast Shadow', cursive;
+}
+
+.texto-sobre button{
+    background-image: linear-gradient(to right, rgb(11, 11, 34), #312d2d);
+
+    border-radius: 18px;
+    padding: 15px;
+    color: white;
+    border: 1px;
+    outline: 0;
+    cursor: pointer;
+    font-family: 'Audiowide', cursive;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Carter One', cursive;
+}
+
+.foto1{
+    width: 120px;
+    box-shadow: 2px 2px 5px rgb(255, 255, 255);
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.foto2{
+    margin-left: 270px;
+    width: 120px;
+    box-shadow: 2px 2px 5px rgb(255, 255, 255);
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.foto3{
+    margin-left: 280px;
+    width: 120px;
+    box-shadow: 2px 2px 5px rgb(255, 255, 255);
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btn button:hover{
+    background-image: linear-gradient(to right, rgb(11, 11, 34), #0f0c0c);
+}
+
+.titou{
+    font-family: 'Audiowide', cursive;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Carter One', cursive;
+    margin-top: 50px;
+    color: #d8bc1b;
+}
 
